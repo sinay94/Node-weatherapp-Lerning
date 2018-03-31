@@ -49,6 +49,12 @@ app.get('/about',(req,res)=>{
     pageTitle:'About page',
   });
 })
+app.get('/port',(req,res)=>{
+  res.render('portfolio.hbs',{
+    pageTitle: 'Portfolio',
+
+  })
+})
 
 app.get('/bad',(req,res)=>{
   res.send({
